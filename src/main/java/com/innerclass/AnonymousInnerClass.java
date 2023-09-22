@@ -7,25 +7,35 @@ package com.innerclass;
 Class (may be abstract or concrete).
 Interface*/
 
-
 //Outer Class
 public class AnonymousInnerClass {
 
-	//Outer Method
+	// Outer Method
 	public static void main(String[] args) {
-		
-		//Inner Class --> Below we created  AnonymousInnerClass which is already abstract class
+
+		// Inner Class --> Below we created AnonymousInnerClass which is already
+		// abstract class
 		Anonymous any = new Anonymous() {
-			
-			//@Override
+
+			// @Override
 			void anonymousMethod() {
 				System.out.println("this method is created in abstract anonymous class ");
-				
+
 			}
 		};
-		
-		any.anonymousMethod(); //calling method from Anonymous class (inner Class)
 
+		any.anonymousMethod();
+		// calling method from Anonymous class (inner Class)
+		AnonymousInterface anyinter = new AnonymousInterface() {
+
+		@Override
+			public void anonymousinterface() {
+
+				System.out.println("Calling method from interface");
+
+			}
+		};
+		anyinter.anonymousinterface(); 
 	}
 
 }
