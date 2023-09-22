@@ -22,9 +22,28 @@ public class AnonymousInnerClass {
 				System.out.println("this method is created in abstract anonymous class ");
 				
 			}
+
+			@Override
+			void anothermethod() {
+				// TODO Auto-generated method stub
+				
+			}
 		};
 		
+		AnonymousInterface intrface = new AnonymousInterface() {
+			
+			@Override
+			public void interfaceMethod() {
+				System.out.println("This method is written in Anonymous interface and inmplemented in this class");
+				
+			}
+		};
+		
+		intrface.interfaceMethod(); // calling method from Anonymous interface
+		
 		any.anonymousMethod(); //calling method from Anonymous class (inner Class)
+		
+	
 
 	}
 

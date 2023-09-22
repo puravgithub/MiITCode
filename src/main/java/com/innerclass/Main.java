@@ -26,6 +26,9 @@ public class Main  {
 		cvl.facultyName(); // Calling method from inner class
 		
 		mainUni.getfacultyname(); // Calling method (outer method) from outer class
+		
+		
+
 	}
 	
 
