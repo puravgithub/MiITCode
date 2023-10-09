@@ -9,6 +9,8 @@ public interface NestedInterface { //outer interface
 		
 		//method of inner interface
 		public void print();  // Declaring method and implementing in another class
+		
+	
 	}
 	
 }
