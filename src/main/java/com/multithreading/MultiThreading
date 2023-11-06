@@ -1,0 +1,41 @@
+Multithreading in Java is a process of executing multiple threads simultaneously.
+
+
+Advantages of Java Multithreading :
+1) It doesn't block the user because threads are independent and you can perform multiple operations at the same time.
+
+2) You can perform many operations together, so it saves time.
+
+3) Threads are independent, so it doesn't affect other threads if an exception occurs in a single thread.
+
+
+Multitasking :
+1.Process based (multiprocessing)
+2.Thread based (multithreading)
+
+
+What is Thread in java :
+A thread is a lightweight subprocess, the smallest unit of processing. It is a separate path of execution.
+
+Threads are independent. If there occurs exception in one thread, it doesn't affect other threads. It uses a shared memory area.
+
+JAVA THREAD CLASS IS USED IN MULTITHREADING :
+
+Thread class extends Object class and implements Runnable interface.
+
+Commonly used Constructors of Thread class:
+
+Thread()
+Thread(String name)
+Thread(Runnable r)
+Thread(Runnable r,String name)
+
+
+Life cycle of a Thread (Thread States)
+In Java, a thread always exists in any one of the following states. These states are:
+
+New
+Active
+Blocked / Waiting
+Timed Waiting
+Terminated

@@ -24,6 +24,8 @@ public class OuterClass {
 
 	}
 	
+	//just like static attributes and methods, a static inner class does not have access to members of the outer class.
+	
 	static class StaticInnerClass{
 		// Above class is static nested class
 		
@@ -34,8 +36,13 @@ public class OuterClass {
 	}
 	
 	
-	interface iCallable {
+	public interface iCallable {
 		// Nested Interface --An interface created within class or interface.
+		
+		
+		public void display();
 	}
+	
+	
 
 }
